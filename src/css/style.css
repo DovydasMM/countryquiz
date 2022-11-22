@@ -1,0 +1,129 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url("../images/background.png");
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: solid;
+  border-width: 2px;
+  border-radius: 20px;
+  width: fit-content;
+  padding: 10px;
+  height: 300px;
+  width: 330px;
+  background-color: white;
+}
+
+.game-window {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.answers__answer {
+  border-style: solid;
+  width: 288px;
+  padding: 5px;
+  border-radius: 10px;
+  border-width: 1px;
+}
+
+.answers__answer:hover {
+  cursor: pointer;
+}
+
+.game-window__question {
+  font-weight: bold;
+  margin-bottom: 8px;
+  margin-top: 12px;
+}
+
+.game-window__flag {
+  height: 45px;
+  max-width: 90px;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 8px;
+}
+
+.answers__answer--wrong {
+  background-color: red;
+}
+
+.answers__answer--correct {
+  background-color: green;
+}
+
+.answers {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.game-window__question--gap {
+  margin-top: 65px;
+}
+
+.green {
+  color: green;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.container__results {
+  font-size: 30px;
+  margin: 12px;
+  font-weight: bold;
+}
+
+.green {
+  color: green;
+}
+
+.btn {
+  min-width: 80px;
+  width: fit-content;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  background-color: deepskyblue;
+  border-width: 1px;
+  border-style: none;
+  padding: 12px;
+}
+
+.btn--restart {
+  margin-top: 12px;
+  padding: 6px 12px 6px 12px;
+}
+
+.btn--start {
+  background-color: rgb(99, 148, 212);
+}
+
+.btn--next {
+  background-color: orange;
+  margin-top: 12px;
+  width: fit-content;
+  padding: 6px 16px 6px 16px;
+  border-style: none;
+  margin-left: auto;
+}
